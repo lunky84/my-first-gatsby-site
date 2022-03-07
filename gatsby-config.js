@@ -1,6 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: "My Super Cool Blog",
+    title: `Gatsby Starter Blog`,
+    author: {
+      name: `John Downie`,
+      summary: `who develops web applications.`,
+    },
+    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    social: {
+      twitter: `johnldownie`,
+    },
   },
   plugins: [
     "gatsby-plugin-image",
@@ -14,5 +22,6 @@ module.exports = {
     },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-react-helmet"
   ],
 };
